@@ -6,7 +6,7 @@ import axios from 'axios';
 const Speakers = () => {
       const [speakers,setspeakers]=useState([ ]);
     useEffect(()=>{
-      axios.get('/speakers').then((res)=>{
+      axios.get('https://esummitwebsite.herokuapp.com/speakers').then((res)=>{
           console.log(res);
           setspeakers(res.data);
       })

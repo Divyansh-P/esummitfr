@@ -6,7 +6,7 @@ import './Team.css';
 const Team = () => {
    const [teams, setteams] = useState([ ]);
   useEffect(() => {
-    axios.get('/team').then((res) => {
+    axios.get('https://esummitwebsite.herokuapp.com/team').then((res) => {
       console.log(res.data)
       setteams(res.data);
     })

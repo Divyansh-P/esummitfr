@@ -7,7 +7,7 @@ const Events = () => {
     const[show,setshow]=useState(false);
      const [events,setevents]=useState([ ]);
     useEffect(()=>{
-      axios.get('/events').then((res)=>{
+      axios.get('https://esummitwebsite.herokuapp.com/events').then((res)=>{
           setevents(res.data);
       })
     },[]) 

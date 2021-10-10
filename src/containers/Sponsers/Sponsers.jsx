@@ -4,7 +4,7 @@ import './Sponsers.css';
 const Sponsers = () => {
       const [sponsers,setsponsers]=useState([ ]);
     useEffect(()=>{
-      axios.get('/sponsers').then((res)=>{
+      axios.get('https://esummitwebsite.herokuapp.com/sponsers').then((res)=>{
           setsponsers(res.data);
       })
     },[])

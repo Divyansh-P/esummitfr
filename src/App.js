@@ -25,8 +25,8 @@ function App() {
           <Route path="/speakers" ><Speakers /></Route>
           <Route path="/sponsers" ><Sponsers /></Route>
           <Route path="/contact-us" ><Contact /></Route>
-          <Route path="/form"><Register1 />  </Route>
-          <Route path="/register"><Register /></Route>
+         { /* <Route path="/form"><Register1 />  </Route>
+          <Route path="/register"><Register /></Route> */}
           <Route path="/teams"><Team/></Route>
         </Switch>
         {/* <Cube /> */}

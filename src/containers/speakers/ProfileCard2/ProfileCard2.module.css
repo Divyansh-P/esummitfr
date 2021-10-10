@@ -16,7 +16,7 @@
 
 .imgBox {
     position: relative;
-    min-height: 70vh;
+    height: 70vh;
     width: 50vw;
     z-index: 1;
     transform-origin: left;
@@ -136,8 +136,13 @@
         transform: translateX(0) ;
     }
     .imgBox {
-        height: 60vh;
+        background-color: white;
+        height: 50vh;
         width: 80vw;
+    }
+    .imgBox .imga{
+        width: 100%;
+        height: 100%;
     }
     .c{
         color: white;   
@@ -148,6 +153,6 @@
     }
     .details{
         width: 80vw;
-        height: 70vh;
+        height: 50vh;
     }
 }
