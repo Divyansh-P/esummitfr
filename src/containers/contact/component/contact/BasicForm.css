@@ -1,0 +1,164 @@
+.forma{
+  
+    height: auto;
+    /* margin: 0.5rem; */
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    height: auto;
+    overflow: hidden;
+    background-color: #121212;
+
+    /* padding: 0.5rem; */
+    width: 90%;
+    margin:  0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  
+  .form-control input,
+  .form-control label {
+    display: block;
+    width: 100%;
+    margin: auto;
+    border: 1px solid grey;
+    background-color: black;
+    color: rgb(225, 220, 238);
+
+
+
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control input,
+  .form-control select {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+    outline:none;
+    border-color:grey;
+    box-shadow:0 0 15px grey;
+  }
+  .form-control textarea{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    height: 6rem;
+    max-width: 100%;
+    background-color: black;
+    
+    color: rgb(225, 220, 238);
+    outline:none;
+    border-color:grey;
+    box-shadow:2px 2px 15px grey;
+  }
+  
+  .form-control input:focus,.form-control textarea:focus {
+    outline: none;
+    border-color: #240370;
+    background-color: #8e8997;
+  }
+  
+  .control-group {
+    display: flex;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .control-group .form-control {
+    min-width: 15rem;
+    flex: 1;
+  }
+  
+  button {
+    font: inherit;
+    background-color: #286090;
+    color: white;
+    border: 1px solid #204d74;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    width: 80%;
+  }
+  
+  button:hover,
+  button:active {
+    background-color: #4e92ce;
+    border-color: #2d84cc;
+  }
+  
+  button:disabled,
+  button:disabled:hover,
+  button:disabled:active{
+    background-color: #ccc;
+    color: #292929;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .form-actions {
+    text-align: center;
+    
+  }
+  
+  .form-actions button {
+    margin: 0rem;
+  }
+  
+  .invalid input, .invalid textarea{
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+  }
+  
+  .invalid input:focus {
+    border-color: #ff8800;
+    background-color: #c9931e;
+
+  }
+  
+  .error-text {
+    color: rgb(151, 95, 98);
+    margin-bottom: -0.3rem;
+    font-size: 1rem;
+    /* background-color: red; */
+  }
+
+  .buttonA{
+    
+    width: 3rem;
+    height: 1.6rem;
+
+  }
+  .buttonA:hover{
+    transform: rotate(0deg) skew(0deg) translate(0, -2px);
+  }
+
+  @media only screen and (max-width: 900px) {
+    .form-control{
+      width: 95%;
+    }
+
+    .form-control input,.form-control textarea{
+      width: 97%;
+      max-width: 20rem;
+    }
+    button {
+      
+      /* width: 80%; */
+      max-width: 20rem;
+    }
+  }

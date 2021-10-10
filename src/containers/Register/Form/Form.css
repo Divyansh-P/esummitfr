@@ -1,0 +1,60 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.formbx .upi{
+    font-size: 11px;
+    margin: 0;
+}
+
+.ppic{
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+}
+
+.box{
+    width: 25rem;
+    height: 31rem;
+    border-radius: 10px;
+    background: #fff;
+    
+    display: flex;
+    justify-content: center;
+    
+    margin: 1rem;
+    position: relative;
+    
+    box-shadow: 0 19px 38px rgba(0,0,0,0.50), 0 15px 12px rgba(0,0,0,0.32);
+}
+.formbx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.formbx input{
+    background-color: transparent;
+width: 20rem;
+height: 1.5rem;
+margin: 20px 0px 20px 0px;
+border:none;
+
+}
+.formbx input:focus-visible{
+    outline: none;
+}
+.formbx .info{
+    border-bottom: 3px solid;
+    border-width: 3px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.formbx input:-internal-autofill-selected{
+    background-color: transparent;
+}
+.inputt{
+    margin: 0;
+}

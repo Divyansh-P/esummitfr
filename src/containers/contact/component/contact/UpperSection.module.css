@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+.UpperSection {
+    /* height: 20rem; */
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #121212;
+}
+
+.UpperSection img {
+    display: inline-block;
+    width: 20%;
+    /* background-color: red; */
+    border-right: 4px solid white;
+    /* box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 2px rgb(58, 55, 55), 0 0 3px #4e4c4d, 0 0 4px #635d60, 0 0 5px #7c777a, 0 0 6px #838081, 0 0 7px #807c7e; */
+}
+
+.UpperSection p { 
+    font-size: 5rem;
+    display: inline-block;
+    margin-left: 1rem;
+    font-family:'Oswald', sans-serif;
+    font-weight: 50;
+    color: white;
+    letter-spacing: 3px; 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+ }
+
+@media only screen and (max-width:800px) {
+    .UpperSection {
+        flex-direction: column;
+    }
+    .UpperSection img {
+        display: inline-block;
+        min-width: 14rem;
+        height: auto;
+        border: none;
+    }
+    .UpperSection p {
+        font-size: 3rem;
+        color: white;
+        margin: auto;
+    }
+    
+}

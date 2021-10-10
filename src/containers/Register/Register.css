@@ -1,0 +1,16 @@
+*{
+margin: 0;
+padding: 0;
+}
+.register{
+    background-color: rgb(165, 238, 234);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+.draw{
+    width: 500px;
+}
