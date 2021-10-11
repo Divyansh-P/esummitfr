@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import './Events.css';
 import Modal from './Modal/Modal';
+import 'animate.css';
 
 const Events = () => {
     const[show,setshow]=useState(false);
@@ -28,10 +29,10 @@ const Events = () => {
          <div className="container45">
           {
                events.map((event) =>
-                  <div className='solo1' key={event._id}  >
+                  <div className='solo1 animate__animated animate__fadeInUp' key={event._id}  >
                     <img src={event.Image} className="img123"  alt="imageb" />
                      <div className="etitle">{event.Title}</div>
-                     <div className="btn123" onClick={()=>showhandler(event._id)}><div className="r-btn1">View</div></div>
+                     <div className="btn123 animate__animated animate__fadeIn" onClick={()=>showhandler(event._id)}><div className="r-btn1">View</div></div>
                   </div>
                )
           }

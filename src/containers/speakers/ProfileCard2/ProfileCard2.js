@@ -1,11 +1,14 @@
 import classes from './ProfileCard2.module.css'
+
 import { FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import imga from './about.jpg'
 import imgb from './nith.png'
 
 const ProfileCard2 = () => {
+    
     return (
-        <div className={classes.card}>
+        
+        <div className={classes.card} >
             <div className={classes.imgBox}>
                 <img src="https://image.freepik.com/free-vector/about-us-concept-illustration_114360-669.jpg" className={classes.imga} />
                 <img src={imgb} className={classes.imgb} />

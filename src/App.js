@@ -12,12 +12,15 @@ import Home from './containers/Home/Home';
 import Speakers from './containers/speakers/Speakers';
 import Team from './containers/Team/Team';
 import Cube from './containers/Cube/Cube';
+import React from 'react';
 
 function App() {
-
+  
   return (
     <Router>
       <div className="app">
+      
+       
         <Navbar />
         <Switch>
           <Route path="/" exact><Home /></Route>
@@ -25,11 +28,13 @@ function App() {
           <Route path="/speakers" ><Speakers /></Route>
           <Route path="/sponsers" ><Sponsers /></Route>
           <Route path="/contact-us" ><Contact /></Route>
-         { /* <Route path="/form"><Register1 />  </Route>
-          <Route path="/register"><Register /></Route> */}
+          <Route path="/form"><Register1 />  </Route>
+          <Route path="/register"><Register /></Route>
           <Route path="/teams"><Team/></Route>
         </Switch>
+      
         {/* <Cube /> */}
+       
       </div>
 
     </Router>

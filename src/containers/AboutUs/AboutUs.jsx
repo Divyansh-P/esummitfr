@@ -1,9 +1,17 @@
 import React from 'react';
 import './AboutUs.css';
 import ProfileCard2 from '../speakers/ProfileCard2/ProfileCard2';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
     return ( 
-  <div className="btn-container">
+  <div className="btn-container" data-aos="zoom-in"  data-aos-duration="2000">
     <div className={"submit-btn"}>
                       {/* <Button2
                         className={"submit-btn-text"}
@@ -23,7 +31,7 @@ const AboutUs = () => {
     
   </div>
 </div> */}
-<ProfileCard2 />
+<ProfileCard2  />
 
 </div>  
      );

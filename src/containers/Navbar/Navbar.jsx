@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'animate.css';
 import {
   Nav,
   NavLink,
@@ -42,8 +43,8 @@ const Navbar = () => {
         </NavMenu>
       </Nav>}
       {show1&&
-        <aside className={(show1?"sidebar show-sidebar":'sidebar') }  >
-        <div className="sidebar-header">
+        <aside className={(show1?"sidebar show-sidebar animate__animated animate__slideInLeft":'sidebar') }  >
+        <div className="sidebar-header ">
           <img src={p} className="logo" alt="" />
           <div className="close-btn" onClick={closehandler}><i className="fas fa-times"></i></div>
         </div>
