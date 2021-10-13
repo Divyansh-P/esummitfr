@@ -1,15 +1,19 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import './Sponsers.css';
+import ClipLoader from "react-spinners/ClipLoader";
 const Sponsers = () => {
       const [sponsers,setsponsers]=useState([ ]);
+      const [loading,setloading]=useState(true);
     useEffect(()=>{
       axios.get('https://esummitwebsite.herokuapp.com/sponsers').then((res)=>{
           setsponsers(res.data);
+         
       })
     },[])
     console.log(sponsers);
     return ( 
+      
         <React.Fragment>
         <h1 className="spon">Sponsors</h1>
     <div className="container61">
@@ -23,6 +27,7 @@ const Sponsers = () => {
     ))}
     </div>
     </React.Fragment>
+       
      );
     }
  

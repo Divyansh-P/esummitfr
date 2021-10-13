@@ -1,0 +1,15 @@
+.Footera {
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    
+    /* background: linear-gradient(to top left , #818181, #000000); */
+    background-color: #121212;
+}
+
+
+/** For mobile devices **/
+
+@media (max-width: 767px) {
+
+}

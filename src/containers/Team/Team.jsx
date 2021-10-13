@@ -4,10 +4,12 @@ import './Team.css';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import 'animate.css';
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 const Team = () => {
    const [teams, setteams] = useState([ ]);
+   
   useEffect(() => {
     axios.get('https://esummitwebsite.herokuapp.com/team').then((res) => {
       console.log(res.data)
@@ -15,10 +17,15 @@ const Team = () => {
     })
     AOS.init();
     AOS.refresh();
+  
+    
   }, []) 
 console.log(teams)
   return (
+
+   
     <div className="container789">
+    
     <div className="headingteam">Our Team</div>
     <div className="team_container">
 
@@ -49,6 +56,7 @@ console.log(teams)
         
  
     </div>
+   
     </div>
   )
 }
